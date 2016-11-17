@@ -160,16 +160,15 @@
 .prev{left: -53px;}
 .part,.part1,.part2,.part3{
     position: relative;
-    top:62px;
     width: 1349px;
     height: 130px;
     background: url("../img/part_bar_bg.gif") repeat;
 }
 .part2{
-    top:226px;
+    top:164px;
 }
 .part3{
-    top:373px;
+    top:311px;
 }
 .part span,.part1 span,.part2 span,.part3 span{
     display: inline-block;
@@ -284,7 +283,7 @@
     height: 270px;
     position: relative;
     left: 175px;
-    top:122px;
+    top:60px;
 }
 .ser-top{
     width: 320px;
@@ -374,7 +373,7 @@
     background: url("../img/e08eb50b6911dd1ebfd53a65a5629f94.jpg") repeat;
     background-size: contain;
     position: absolute;
-    top: 1787px;
+    top: 1725px;
     display: none;
     z-index: 1000;
 }
