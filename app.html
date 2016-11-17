@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--<html ng-app="app">-->
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+
+    <!--设置阅读器内容中的数字不做高亮处理（电话号码显示为拨号的超链接）-->
+    <meta name="format-detection" content="telephone=no">
+
+    <!--初始化样式-->
+    <link rel="stylesheet" href="css/resetapp.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!--zepto代替jQuery-->
+    <script src="lib/zepto.min.js"></script>
+    <script>
+        window.jQuery = $;
+    </script>
+    <script src="js/jquery.base64.js"></script>
+    <script src="js/jquery.jsonp.js"></script>
+
+</head>
+<body>
+
+<div id="root" class="container" >
+    <div class="alert">
+        <span>没有更多内容啦~</span>
+        <div class="close">确定</div>
+    </div>
+
+    <div class="m-artical-action">
+        <!--设置文章中间板块 点击唤出上下导航栏
+        考虑后期的拓功能（如上下点击实现滚动或翻页）
+        将其放在一个层中-->
+        <div id="action-mid" class="artical-action-mid"></div>
+    </div>
+
+    <!--顶部导航-->
+    <div id="top-nav" class="top-nav" style="display: none">
+        <div class="icon-back"></div>
+        <div class="nav-title">返回</div>
+    </div>
+
+    <!--底部导航-->
+    <div id="bottom-nav" class="bottom-nav" style="display: none">
+        <div class="bottom-nav-left">
+            <div class="nav-list">
+                <div class="list-content"></div>
+                <div class="list-text">目录</div>
+            </div>
+        </div>
+        <div class="bottom-nav-mid">
+            <div class="nav-listM">
+                <div class="list-font"></div>
+                <div class="list-text">字体</div>
+            </div>
+
+            <div class="nav-listM2">
+                <div class="list-font2"></div>
+                <div class="list-text">字体</div>
+            </div>
+        </div>
+
+
+        <div class="bottom-nav-right">
+            <div class="nav-listR">
+                <div class="list-day"></div>
+                <div class="list-text">白天</div>
+            </div>
+
+            <div class="nav-listR2">
+                <div class="list-night"></div>
+                <div class="list-text">夜间</div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--标题-->
+    <div id="fition_chapter_title"></div>
+    <!--内容-->
+    <!--问题 内容区域是动态数据，如何添加样式？-先用一段文字模拟-->
+    <div id="fiction_container" class="m-read-content">
+
+
+    </div>
+
+    <!--底部边栏，进行上下翻章节的操作-->
+    <div class="m-button-bar">
+        <ul class="u-tab">
+            <li id="prev_button">上一章</li>
+            <li id="next_button">下一章</li>
+        </ul>
+    </div>
+
+
+
+    <!--字体控制面板-->
+    <div class="nav-pannel-bk" style="display: none"></div>
+    <div id="font-container" class="nav-pannel" style="display: none">
+        <div class="child-mod">
+            <span>字号</span>
+            <button id="large-font" class="font-size-button">大</button>
+            <button id="small-font" class="font-size-button">小</button>
+        </div>
+        <div class="child-mod2">
+            <span>背景</span>
+
+            <div class="back-container">
+                <div></div>
+            </div>
+            <div class="back-container">
+                <div></div>
+            </div>
+            <div class="back-container">
+                <div></div>
+            </div>
+            <div class="back-container">
+                <div></div>
+            </div>
+            <div class="back-container">
+                <div></div>
+            </div>
+            <div class="back-container">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="js/appmain.js"></script>
+</html>
+
+<!--做完以后再用jade，和less写一次-->
