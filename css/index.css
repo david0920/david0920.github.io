@@ -1,0 +1,74 @@
+body{
+
+    margin: 0 ;
+    padding: 0;
+    opacity: 0.9;
+}
+.logo{
+    color:white;
+    font-size: 50px;
+    font-family:"Times New Roman",Book Antiqua,Serif;
+    margin: 20px;
+}
+
+
+.container{
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: 590px;
+    margin-top: 30px;
+    border-radius: 4px;
+    background: #000;
+}
+
+.contact{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    color: white;
+}
+
+.show{
+    width: 290px;
+    height: 330px;
+    /*background: blue;*/
+    float: left;
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    left: 20%;
+    border-radius: 4px;
+    border: 3px solid #161616;
+}
+
+.app{
+    width: 290px;
+    height: 330px;
+    /*background: blue;*/
+    float: left;
+    position: absolute;
+    overflow: hidden;
+    top: 100px;
+    left:  50%;
+    border: 3px solid #161616;
+    border-radius: 6px;
+}
+
+.show:hover,.app:hover{
+    border: 3px solid white;
+}
+.show:hover .text,.app:hover .text{
+    background: #fff;
+    color: #161616;
+}
+.text{
+    color: white;
+    background: #161616;
+    width: 100%;
+    margin-top: -5px;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+}
