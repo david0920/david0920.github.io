@@ -3,6 +3,21 @@
  */
 (function () {
 
+
+
+
+
+    document.onmousewheel=function() {
+        if (event.ctrlKey) {
+            return false;
+        }
+    }
+
+
+
+
+
+
     /**
      *  点击切换导航按钮
      * @param target 被点击的按钮
