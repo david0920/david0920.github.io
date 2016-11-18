@@ -128,6 +128,7 @@ img{border: 0px;}
         color:white;
         width: 95px;
         height: 24px;
+        background: none;
     }
     #phone span{
         /*position: relative;*/
