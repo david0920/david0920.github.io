@@ -22,7 +22,7 @@ body{
     left: 36%;
 }
 
-
+img{border: 0px;}
 .container{
     margin: 0 auto;
     position: relative;
@@ -84,4 +84,81 @@ body{
     position: absolute;
     top:70%;
     left:39%;
+}
+.phone,.sub-contact{
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    .container{
+        width: 100%;
+        background: url("../img/04_rs_office_dga.jpg")  no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+    .contact{
+        display: none;
+    }
+    .logo{
+        font-size: 40px;
+        top: 20px;
+        left: 33%;
+    }
+    .title{
+        font-size: 40px;
+        top: 20%;
+        left: 15%;
+    }
+    .show{
+        top:35%;
+        left:18%;
+    }
+    .app{
+        top:45%;
+        left:18%;
+    }
+    .res{
+        top:60%;
+        left:18%;
+    }
+
+    #phone{
+        position: absolute;
+        top:75%;
+        left: 35%;
+        color:white;
+        width: 95px;
+        height: 24px;
+    }
+    #phone span{
+        /*position: relative;*/
+        /*right: 0px;*/
+        float: right;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url("../img/telephone_24px_522407_easyicon.net.ico");
+
+
+    }
+
+    .phone{
+        float: left;
+        width: 70px;
+        height: 24px;
+        display: block;
+        line-height: 24px;
+    }
+    .sub-contact{
+        width: 100%;
+        position: absolute;
+        height: 95px;
+        top:83%;
+        display: none;
+        /*background: red;*/
+    }
+    .sub-contact p{
+        margin-left: 60px;
+        color: white;
+        display: block;
+    }
 }
