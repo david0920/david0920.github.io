@@ -45,14 +45,21 @@
 
 </body>
 <script>
+window.onload=function () {
+    document.onmousewheel=function() {
+        if (event.ctrlKey) {
+            return false;
+        }
+    }
+
     var show=document.querySelector(".show");
     var app=document.querySelector(".app");
     var res=document.querySelector(".res");
-    
+
     show.onclick=function () {
-      GoTo("show.html");
+        GoTo("show.html");
     };
-    
+
     app.onclick=function () {
         GoTo("app.html");
     };
@@ -60,9 +67,11 @@
     res.onclick=function () {
         GoTo("my.html");
     };
-    
+
     function GoTo(location) {
         window.location.href=location;
     }
+}
+
 </script>
 </html>

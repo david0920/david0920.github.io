@@ -6,6 +6,16 @@
 
     <link rel="shortcut icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="css/mycss.css">
+
+    <script>
+
+        document.onmousewheel = function () {
+            if (event.ctrlKey) {
+                return false;
+            }
+        }
+
+    </script>
 </head>
 <body>
     <div class="container">
@@ -87,4 +97,5 @@
     </div>
 
 </body>
+
 </html>
