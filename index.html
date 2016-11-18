@@ -31,6 +31,10 @@
             <i>WebApp Reader</i>
         </div>
 
+        <div class="text res">
+             <i>个人简历</i>
+        </div>
+
     <div class="contact">
         <h4>与我联系</h4>
         <p>电话：158-6083-7205</p>
@@ -43,6 +47,7 @@
 <script>
     var show=document.querySelector(".show");
     var app=document.querySelector(".app");
+    var res=document.querySelector(".res");
     
     show.onclick=function () {
       GoTo("show.html");
@@ -50,6 +55,10 @@
     
     app.onclick=function () {
         GoTo("app.html");
+    };
+
+    res.onclick=function () {
+        GoTo("my.html");
     };
     
     function GoTo(location) {

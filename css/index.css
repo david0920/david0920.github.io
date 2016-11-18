@@ -49,12 +49,12 @@ body{
 }
 
 
-.show:hover,.app:hover{
+.show:hover,.app:hover,.res:hover{
     border: 2px solid #FFD62B;
     background:#FFD62B;
     color:#1C0C1D;
 }
-.show:hover .text,.app:hover .text{
+.show:hover .text,.app:hover .text,.res:hover .text{
     background: #fff;
     color: #161616;
 }
@@ -72,10 +72,15 @@ body{
 }
 .show{
     position: absolute;
-    top:55%;
+    top:45%;
     left:39%;
 }
 .app{
+    position: absolute;
+    top:55%;
+    left:39%;
+}
+.res{
     position: absolute;
     top:70%;
     left:39%;
