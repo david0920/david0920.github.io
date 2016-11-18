@@ -11,6 +11,8 @@
 
 (function () {
 
+    alert("进入此页面，建议您缩小浏览器窗口")
+
     /*  对HTML5的本地存储做封装
      *
      * localstorage是键值对的形式，key容易重叠，覆盖
