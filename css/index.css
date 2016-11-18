@@ -8,18 +8,37 @@ body{
     color:white;
     font-size: 50px;
     font-family:"Times New Roman",Book Antiqua,Serif;
-    margin: 20px;
+    /*margin: 20px;*/
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.title{
+    font-size: 50px;
+    color:white;
+    position: absolute;
+    top: 25%;
+    left: 36%;
 }
 
 
 .container{
     margin: 0 auto;
     position: relative;
-    width: 1200px;
-    height: 590px;
-    margin-top: 30px;
+    width: 1360px;
+    height: 660px;
     border-radius: 4px;
-    background: #000;
+    background: url("../img/hero-bg.jpg")  no-repeat;
+    background-size: cover;
+}
+.mask{
+    width: 1360px;
+    height: 660px;
+    background: black;
+    opacity: 0.5;
+    z-index: 999;
+
 }
 
 .contact{
@@ -29,34 +48,11 @@ body{
     color: white;
 }
 
-.show{
-    width: 290px;
-    height: 330px;
-    /*background: blue;*/
-    float: left;
-    position: absolute;
-    overflow: hidden;
-    top: 100px;
-    left: 20%;
-    border-radius: 4px;
-    border: 3px solid #161616;
-}
-
-.app{
-    width: 290px;
-    height: 330px;
-    /*background: blue;*/
-    float: left;
-    position: absolute;
-    overflow: hidden;
-    top: 100px;
-    left:  50%;
-    border: 3px solid #161616;
-    border-radius: 6px;
-}
 
 .show:hover,.app:hover{
-    border: 3px solid white;
+    border: 2px solid #FFD62B;
+    background:#FFD62B;
+    color:#1C0C1D;
 }
 .show:hover .text,.app:hover .text{
     background: #fff;
@@ -64,11 +60,23 @@ body{
 }
 .text{
     color: white;
-    background: #161616;
-    width: 100%;
+    background: none;
+    border: 2px solid white;
+    width: 220px;
     margin-top: -5px;
     height: 42px;
     line-height: 40px;
     text-align: center;
     font-size: 24px;
+    border-radius: 10px;
+}
+.show{
+    position: absolute;
+    top:55%;
+    left:39%;
+}
+.app{
+    position: absolute;
+    top:70%;
+    left:39%;
 }

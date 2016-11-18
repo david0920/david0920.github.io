@@ -14,27 +14,22 @@
 </head>
 <body>
 <div class="container">
-
+    <div class="mask"></div>
     <div class="logo">
         <i>David</i>
     </div>
 
-
-    <div class="show ">
-        <img src="img/111.jpg">
-        <div class="text">
+    <div class="title">
+       <i>Hi,I'm David</i>
+    </div>
+    
+        <div class="text show">
             <i>Show Products</i>
         </div>
-    </div>
 
-
-    <div class="app">
-        <img src="img/222.jpg">
-        <div class="text">
+        <div class="text app">
             <i>WebApp Reader</i>
         </div>
-    </div>
-
 
     <div class="contact">
         <h4>与我联系</h4>
@@ -43,31 +38,22 @@
     </div>
 
 </div>
-<script >
-    (function () {
-        document.onmousewheel=function() {
-            if (event.ctrlKey) {
-                return false;
-            }
-        }
 
-
-        var showProducts=document.querySelector(".show");
-        var showApp=document.querySelector(".app");
-
-        showProducts.onclick=function () {
-            GoToWebSite("http://dfborn.site/show.html")
-        };
-        showApp.onclick=function () {
-            GoToWebSite("http://dfborn.site/app.html")
-        };
-
-        function GoToWebSite(location) {
-//            console.log("aaaa")
-            window.location.href=location;
-//            window.name = location;
-        }
-    })();
-</script>
 </body>
+<script>
+    var show=document.querySelector(".show");
+    var app=document.querySelector(".app");
+    
+    show.onclick=function () {
+      GoTo("show.html");
+    };
+    
+    app.onclick=function () {
+        GoTo("app.html");
+    };
+    
+    function GoTo(location) {
+        window.location.href=location;
+    }
+</script>
 </html>
