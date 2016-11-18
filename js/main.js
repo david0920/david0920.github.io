@@ -224,27 +224,7 @@
 
     CrossChange(".right", ".right .txt1", ".right .txt2", ".right .onshow", ".right .onhide", ".right .onShowBg", ".right .onHideBg");
 
-    // $(".left").mouseenter(function () {
-    //
-    //     $(".left .txt1").stop(true).animate({left:-250},300);
-    //     $(".left .txt2").stop(true).animate({left:45},300);
-    //     $(".left .onshow").stop(true).animate({left:300},300);
-    //     $(".left .onhide").stop(true).animate({left:105},300);
-    //
-    //     $(".left .onShowBg").stop(true).animate({opacity:0},300);
-    //     $(".left .onHideBg").stop(true).animate({opacity:1},300);
-    //     $(".click").show(300);
-    // });
-    //
-    // $(".left").mouseleave(function () {
-    //     $(".left .txt1").stop(true).animate({left:45},300);
-    //     $(".left .txt2").stop(true).animate({left:330},300);
-    //     $(".left .onshow").stop(true).animate({left:105},300);
-    //     $(".left .onhide").stop(true).animate({left:-100},300);
-    //     $(".left .onShowBg").stop(true).animate({opacity:1},300);
-    //     $(".left .onHideBg").stop(true).animate({opacity:0},300);
-    //     $(".click").hide();
-    //  });
+
 
     /**
      * 点击显示隐藏的中间轮播图
@@ -400,14 +380,7 @@
 
     ClickShowProducts(".exp-nav4", ".products4", ".products1", ".products2", ".products3");
 
-    // $(".exp-nav4").click(function () {
-    //     $(".expamle").css("height",633);
-    //     $(".products4").show();
-    //
-    //     $(".products1").hide();
-    //     $(".products2").hide();
-    //     $(".products3").hide();
-    // });
+
     ClickShowProducts(".exp-nav1", ".products", ".products4", ".products2", ".products3");
 
     ClickShowProducts(".exp-nav2", ".products2", ".products4", ".products", ".products3");
@@ -528,35 +501,7 @@
         }
     }
 
-    //点击回到顶部
-    // function backToTop(height) {
-    //
-    //     if(!clicked){
-    //         var id = setInterval(function () {
-    //
-    //             // var top一定要写在setInterval 里
-    //
-    //             // 前者兼容IE   后者兼容Chrome      scrollTop 是可读写的
-    //             var top = document.documentElement.scrollTop || document.body.scrollTop;
-    //
-    //             isTop = true;
-    //             //  到这步   发现top还没有为0的时候就停止了向上滚动  也还没有停止定时器
-    //             //  解决的办法是
-    //             // var speed=Math.floor(-top/9);
-    //             var speed = Math.floor(-top / 10);
-    //
-    //             // 把数值 赋值给支持前者或支持后者的浏览器
-    //             //  固定的速度  效果不是很好    要是滚动速度随着值的变小而变小
-    //             document.documentElement.scrollTop = document.body.scrollTop = top + speed;
-    //
-    //             //判断  当top为0的时候 停止定时器
-    //             if (top <= height) {
-    //                 clearInterval(id);
-    //             }
-    //         }, 50);
-    //     }
-    //
-    // }
+  
 
 //回到顶部
     $(".toTop").click(function () {
