@@ -832,12 +832,6 @@ h4{
 }
 
 
-
-
-
-
-
-
 #talkAndMap{
     height: 250px;
     width: 998px;
@@ -880,17 +874,6 @@ h4{
     float: right;
     border:1px solid #dbdbdb;
 }
-
-
-
-
-
-
-
-
-
-
-
 #footer{
     width:100%;
     height: 237px;
@@ -1112,6 +1095,6 @@ h4{
 
 
     }
-
+    img{border-radius: 0px;}
 
 }
