@@ -8,9 +8,7 @@ body{
     background: url("../img/mainbg3.jpg");
     /*background: url("../img/04_rs_office_dga.jpg");*/
     overflow-y: auto;
-
 }
-
 .content{
     margin: 0 auto;
     width: 800px;
@@ -49,4 +47,17 @@ hr{
 }
 .box p{
     text-indent:30px
+}
+@media (min-width: 280px) and (max-width: 750px){
+    .container{
+        width: 100%;
+        background: url("../img/mainbg3.jpg")  no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+    .content{
+        margin: 0 auto;
+        width: 100%;
+
+    }
 }

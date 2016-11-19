@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-list,.exp-nav{list-style: none;}
 
 .container{
     width: 1350px;
@@ -5,7 +10,6 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-
 }
 
 
@@ -1011,4 +1015,103 @@ h4{
 }
 .toTop:hover{
     background: url('../img/bt_top.gif')  no-repeat 0px -50px  ;
+}
+
+
+
+@media  (min-width: 280px) and (max-width: 750px){
+    .nav,.banner,.part,.expamle,.part1,.server-top,.mid-banner,.server-bottom,.part2
+    ,.about,hr,.tabs,.Infos,.honor,.status,.joinUs,.part3,#talkAndMap,#footer{
+        display: none;
+    }
+    .toTop{
+        visibility: hidden;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        /*overflow-y:auto;*/
+
+    }
+    .sub-logo{
+        width: 100%;
+        height: 48px;
+        background: #070707;
+        position: relative;
+    }
+    .sub-logo-img{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        margin: -24px 0px 0px -70px;
+        width: 280px;
+        height: 48px;
+        display: block;
+        background: url("../img/images/logo.png")  no-repeat;
+        background-size: contain;
+    }
+    .sub-status{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 32px;
+        height: 32px;
+    }
+    .list-close{
+        display: none;
+    }
+    .list{
+        display: block;
+    }
+    .sub-content{
+        width: 100%;
+        margin-bottom: -3px;
+    }
+    .sub-content img{
+        width: 100%;
+        height: auto;
+    }
+    .sub-content2{
+
+        float: left;
+        width: 100%;
+        height: 24%;
+        background: url("../img/images/index_pic2.jpg")  no-repeat;
+        background-size: contain;
+    }
+    .sub-nav{
+        position: absolute;
+        top: 48px;
+        width: 100%;
+        height: 48px;
+        border-top:1px solid #413b33;
+        background: black;
+        opacity: 0.9;
+        display: none;
+    }
+    .sub-nav ul{
+        width: 100%;
+        height: 48px;
+        margin-left: -38px;
+    }
+
+
+    .sub-nav ul li{
+        display: block;
+        float: left;
+        width: 20%;
+        height: 48px;
+        text-align: center;
+        list-style: none;
+        color: white;
+
+
+
+
+    }
+
+
 }

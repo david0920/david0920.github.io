@@ -604,4 +604,18 @@
     addMap();
 
 
+//    list/close切换
+    $(".sub-status").click(function () {
+       if($(".list").css("display")=="block"){
+           $(".list").css("display","none");
+           $(".list-close").css("display","block");
+           $(".sub-nav").slideDown(300)
+       }else {
+           $(".list").css("display","block");
+           $(".list-close").css("display","none");
+           $(".sub-nav").slideUp(300);
+       }
+    });
+
+
 })();
