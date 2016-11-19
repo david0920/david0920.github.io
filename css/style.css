@@ -1007,6 +1007,7 @@ h4{
     ,.about,hr,.tabs,.Infos,.honor,.status,.joinUs,.part3,#talkAndMap,#footer{
         display: none;
     }
+    .sub-nav,.sub-logo,.sub-content{display: block;}
     .toTop{
         visibility: hidden;
     }
