@@ -1000,7 +1000,7 @@ h4{
     background: url('../img/bt_top.gif')  no-repeat 0px -50px  ;
 }
 
-
+.sub-nav,.sub-logo,.sub-content{display: none;}
 
 @media  (min-width: 280px) and (max-width: 750px){
     .nav,.banner,.part,.expamle,.part1,.server-top,.mid-banner,.server-bottom,.part2
@@ -1091,10 +1091,7 @@ h4{
         list-style: none;
         color: white;
 
-
-
-
     }
-    img{border-radius: 0px;}
+    .sub-content img{border: 0px;}
 
 }
