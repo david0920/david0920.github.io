@@ -606,7 +606,7 @@
 
 //    list/close切换
     $(".sub-status").click(function () {
-       if($(".list").css("display")=="block"){
+       if($(".sub-nav").css("display")=="none"){
            $(".list").css("display","none");
            $(".list-close").css("display","block");
            $(".sub-nav").slideDown(300)

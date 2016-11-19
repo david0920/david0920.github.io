@@ -8,6 +8,7 @@
 
     <link rel="shortcut icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="css/mycss.css">
+    <script src="lib/zepto.min.js"></script>
 
     <script>
 
@@ -30,6 +31,15 @@
                     <p>手机：158-6083-7205</p>
                     <p>E-mail：564308930@qq.com</p>
                     <p>求值意向：前端开发</p>
+                </div>
+                <div class="joy">
+                    调戏一下
+                    <span class="joy-arrow"></span>
+                </div>
+                <div class="message">
+                    <span class="mes-txt">录用了才能调戏哦~</span>
+                    <span class="mes-btn">知道了</span>
+
                 </div>
                 <hr>
                 <div class="skill">
@@ -100,5 +110,22 @@
     </div>
 
 </body>
+
+<script>
+
+
+    $(".joy").click(function () {
+
+        if($(".message").css("display")=="none"){
+            $(".message").show(300);
+            $(".joy").hide();
+        }
+    });
+
+    $(".mes-btn").click(function () {
+        $(".message").hide();
+        $(".joy").show();
+    });
+</script>
 
 </html>
